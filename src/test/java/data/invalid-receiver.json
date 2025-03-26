@@ -1,0 +1,10 @@
+{
+  "id": "101",
+  "payment_details": {
+    "account_holder_payer": "0528",
+    "account_holder_receiver": "INVALID",
+    "amount": 1000,
+    "currency": "USD"
+  },
+  "metadata": {}
+}
