@@ -1,16 +1,21 @@
-@Fea1
-Feature: Sample feature
+@FeatureTag
+Feature: Generic API Testing Feature
 
-  @Sce1
-  Scenario: sample 1
+  @ScenarioTag1
+  Scenario: Test GET request
     Given url 'https://jsonplaceholder.typicode.com/posts'
     When method GET
     Then status 200
     * print response
 
-  @Sce2
-  Scenario: sample 2
-    Given url 'https://jsonplaceholder.typicode.com/posts/1'
-    When method GET
-    Then status 200
+  @ScenarioTag2
+  Scenario: Test POST request
+    Given url 'https://jsonplaceholder.typicode.com/posts'
+    And request { "userId": 5,"title": "title of the post","body": "body of the post"}
+    When method POST
+    Then status 201
     * print response
+
+  # Import additional feature files
+  * call read('sample_get.feature')
+  * call read('sample_post.feature')

@@ -11,18 +11,19 @@ public class TestRunner {
     Results results;
 
     @BeforeTest
-    public void beforeTst() {
+    public void beforeTest() {
+        // Setup code if needed
     }
 
     @Test
-    public void tst() {
+    public void runTests() {
         builder = new Builder();
-        builder.path("src/test/java/resources/Features/sample.feature");
-        results = builder.parallel(0);
+        builder.path("src/test/java/resources/Features");
+        results = builder.parallel(5);
     }
 
     @AfterTest
-    public void afterTst() {
-
+    public void afterTest() {
+        // Teardown code if needed
     }
 }

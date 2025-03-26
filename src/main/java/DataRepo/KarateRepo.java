@@ -15,3 +15,4 @@ public class KarateRepo {
         return single_instance;
     }
 }
+
