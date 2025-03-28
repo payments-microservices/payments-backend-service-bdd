@@ -1,0 +1,14 @@
+{
+  "id": "101",
+  "payment_details": {
+    "account_holder_payer": "0528",
+    "account_holder_receiver": "INVALID",
+    "amount": 1000,
+    "currency": "USD"
+  },
+  "metadata": {
+    "timestamp": "2024-08-22T12:00:00Z",
+    "payer_account_location": "US",
+    "receiver_account_location": "CA"
+  }
+}
